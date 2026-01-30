@@ -1,15 +1,19 @@
-# FC Barcelona: Statistical Performance Analysis (Before vs. After Messi)
-### 🏆 Selected as a Penn State University Course Exemplar
+# FC Barcelona Performance Analysis: Before vs. After Messi
 
-## 📌 Project Overview
-A longitudinal study evaluating the impact of Lionel Messi’s 2021 departure on FC Barcelona's match-level and season-level performance metrics using R.
+### 1. Project Overview
+Evaluated whether Lionel Messi’s 2021 departure had a statistically significant impact on FC Barcelona’s performance metrics, including goals, wins, and points per match.
 
-## 🚀 Key Achievements
-* **Reproducibility:** Re-engineered the project architecture to be fully replicable using **Relative Pathing** and `knitr` directory stabilization—solving the common "broken path" error in data science workflows.
-* **Statistical Insights:** Quantified the 2.18 to 2.16 point-per-match dip and analyzed tactical adaptation periods following the departure.
-* **Recognition:** Selected as a Course Exemplar for excellence in **R Markdown** structure and data cleaning best practices.
+### 2. Dataset
+Season-level and match-level performance data for FC Barcelona, split into two eras: "Before Messi" and "After Messi" (post-2021).
 
-## 🛠️ Tech Stack
-* **Language:** R
-* **Framework:** R Markdown (knitr)
-* **Libraries:** Tidyverse, ggplot2
+### 3. Approach
+* **Tools:** R, R Markdown.
+* **Techniques:** Comparative statistical analysis and data visualization using `ggplot2`.
+* **Reproducibility:** Optimized the project structure using relative paths and `knitr` configurations.
+
+### 4. Results
+* **Metrics:** Average points per match saw a modest dip from **2.18 to 2.16**.
+* **Insights:** While there was an immediate performance drop in win rates, recent data indicates a trend of "tactical adaptation," showing that the team is successfully rebuilding its chemistry.
+
+### 5. Key Learnings
+The biggest takeaway was the importance of **Project Reproducibility**. I initially struggled with absolute file paths that broke the code on different machines. I solved this by implementing a self-contained folder structure and using `list.files()` with `getwd()`, ensuring the entire analysis could be "knitted" by any user with a single click.
